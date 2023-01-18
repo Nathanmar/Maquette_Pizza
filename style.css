@@ -4,25 +4,58 @@
 }
 
 
-.pizza-top{
-    position:absolute;
+/* Default styles */
+.pizza-top {
+    position: absolute;
     margin-top: -15%;
     width: 100%;
     z-index: -1;
 }
 
-.li-top{
+.li-top {
     display: block;
     float: right;
     font-family: 'Quicksand';
     font-size: 25px;
 }
 
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .pizza-top {
+        position: relative;
+        margin-top: 0;
+        width: 90%;
+    }
+    .li-top {
+        font-size: 20px;
+    }
+}
+
+/* Media query for screens between 600px and 900px */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .pizza-top {
+        width: 80%;
+    }
+    .li-top {
+        font-size: 22px;
+    }
+}
+
+/* Media query for screens between 900px and 1200px */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .pizza-top {
+        width: 70%;
+    }
+    .li-top {
+        font-size: 24px;
+    }
+}
+
 .font-jaune-top{
     margin-top: 0%;
     float:right;
-    height:8px;
-    width:648px;
+    height:1%;
+    width:42.6%;
     background-color: #c4951f;
     position:absolute;
     top:0%;
@@ -140,7 +173,7 @@
 }
 
 .lorem{
-    margin:10px 0;
+    margin:2.4% 0;
 }
 .news{
 
@@ -171,7 +204,7 @@
     color:white;
     font-size: 17px;
     top:64%;
-    left:24.5%;
+    right:54.7%;
 
 }
 
